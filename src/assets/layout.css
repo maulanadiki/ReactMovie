@@ -1,0 +1,169 @@
+ul, li, a {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    text-decoration: none !important;
+    color: #006563 !important;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+}
+.containers{
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 32px 199px auto;
+    background-color: #006563 !important;
+    gap: 25px;
+}
+.logoPT{
+    height: 86px;
+    width: 199px;
+}
+.logoHome{
+    height: 86px;
+    width: 32px;
+}
+
+/* navigator area */
+.navbars{
+    width: 100%;
+    height:63px;
+    background-color: #f4f4f4;
+    margin-bottom: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
+.navhead{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #f4f4f4;
+    position: sticky;
+}
+.navlist{
+    color: #006563 !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 12vw;
+    padding: 20px 30px;
+    height: 63px;
+}
+.navlist a:hover
+{
+    color: #cfab7a !important;
+}
+/* .navlist:last-child{
+    position: absolute;
+    right: 0;
+    width: 15vw;
+} */
+
+
+
+.dropdowns  {
+    position: relative;
+}
+.dropdowns::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 0;
+    
+}
+.trending:before{
+    background-image: url(../assets/logo/icons.png);
+    background-position: -48px 0;
+    margin: 0px -28px;
+}
+.tvSeries::before{
+    background-image: url(../assets/logo/icons.png);
+    background-position: -26px 0;
+    margin: 0px -28px;
+}
+.movieSeries::before{
+    background-image: url(../assets/logo/icons.png);
+    background-position: -95px 0;
+    margin: 0px -28px;
+}
+
+.dropdownList{
+    position: relative;
+    display: none;
+    margin: 10px 0px;
+    width:200px;
+    background-color: #DCDBDB;
+    border-radius: 12px;
+    visibility: hidden;
+    transition: visibility 0.5 ease;
+    z-index: 9;
+    padding: 0px 15px;
+}
+.navlist:hover > .dropdownList{
+    visibility: visible;
+    display: block;
+    margin-top: -3px;
+}
+
+.navheadsub{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.navItems{
+    padding: 10px 5px;
+}
+.navItems:hover{
+    color:#cfab7a;
+}
+
+.imgCarousel{
+    width: 925px;
+    height: auto;
+}
+
+.headings{
+    height: 48px;
+    border-left: 1px solid #006563;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headings h3{
+    font-size: 16px;
+    background-color: #006563;
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+    padding: 4px 0;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    left: -1px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.potong-text{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
