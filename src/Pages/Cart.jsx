@@ -43,7 +43,7 @@ const Cart = ({ movie }) => {
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
+            confirmButtonText: "Ya, Saya Yakin!",
             }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire({
